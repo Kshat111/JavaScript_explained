@@ -1,0 +1,9 @@
+Memory life cycle
+Regardless of the programming language, the memory life cycle is pretty much always the same:
+
+1. Allocate the memory you need
+2. Use the allocated memory (read, write)
+3. Release the allocated memory when it is not needed anymore
+
+In C/C++, we have to manually deallocate the used heap memory.
+But in JS we need not deallocate the same, as the Garbage collector runs in the background using the mark and sweep algorithm

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <p id="p1" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iure error ullam labore illum doloremque dolores iusto omnis libero sint.</p>
+    <h2 id = 'h' class="para">Lorem ipsum dolor sit amet.</h2>
+
+    <div id="para1" style="background: #1ac71d; display: inline-block;">
+        <p id="cpara">This is the first 
+            <span>parapraph</span>
+        </p>
+        <p>This is the second paragraph</p>
+    
+    </div>
+
+    <div id="parent" style="background: #6592c0; display: inline-block;">
+        <p >This is the parent paragraph 
+        </p>
+        <p id="child">This is the child paragraph</p>
+    
+    </div>
+
+    <script>
+        // innerHTML - deals with the content inside the element only (excluding the element) - it can't change the type of tag
+        // outerHTML - includes the element as well - can change the type of tag i.e. <h2> can be changed to <p>
+        
+        let sample = document.getElementById("h");
+        sample.innerHTML = '<h1>Hi all, good afternoon</h1>';
+        
+
+        // updation methods
+        let sample1 = document.getElementById("p1");
+        let newPara = "<h1 style=\"color: red;\">This is the new modified paragraph</h1>"
+        sample1.outerHTML = newPara;
+        
+
+        // insertion methods
+
+        // Create a new paragraph element
+        let paragraph = document.createElement('p');
+
+        //Add text Content to the new Paragraph
+        paragraph.textContent = "Hello is a paragraph";
+
+        // Append paragraph to the body of document element - always appended at the end of the parent specified
+        document.body.appendChild(paragraph);
+
+        // to insert at specified position use insertAdjacentElement
+        
+        // Create a new element
+        var newElement = document.createElement("div");
+        newElement.textContent = "Welcome to my website for JS";
+
+        // Get the reference to the existing element
+        var existingElement = document.getElementById("para1");
+
+        // Insert the new element before the existing element
+        existingElement.insertAdjacentElement('beforebegin', newElement); // four positions are there- 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
+
+
+
+
+        // deletion of child
+
+        let parent = document.getElementById("parent");
+        let child = document.getElementById("child")
+        // parent.removeChild(child);
+
+
+
+        
+    </script>
+
+</body>
+</html>
+<!-- 
+    Access methods:
+    1. document.getElementById("p1")
+    2. document.getElementByClassName("para")
+    3. document.getElementByTag("h2")
+    
+    4. document.querySelector(".para") - returns only the first element (of class="para") if same ID is assigned to multiple tags
+    5. document.querySelectorAll(".para") - returns every element having "para" class
+ -->
+
+ <!-- 
+    Updation methods:
+    1. innerHTML and outerHTML
+    2. innerText: innerText prints text as it appears on screen.
+    3. textContent: The textContent property returns the content as it in the HTML markup.
+  -->
+
+

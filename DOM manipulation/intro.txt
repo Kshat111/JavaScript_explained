@@ -1,0 +1,36 @@
+1. When a web page is loaded, the browser creates a Document Object Model of the page.
+2. The HTML DOM model is constructed as a tree of Objects (like a tree in data structures)
+3. The Document Object Model (DOM) is a programming interface for web documents, providing a structured representation of HTML and XML documents. It allows JavaScript to interact with and manipulate the content, structure, and style of web pages dynamically.
+4. Object: An object in the DOM refers to any element within the document, such as an HTML tag, attribute, or piece of text. Each part of the document is represented as an object, which means every HTML element (like <div>, <p>, <a>, etc.) becomes a node in the DOM tree.
+5. These objects are instances of the 'node' interface (have properties specific to their node type):
+
+(i) Element node: Represent HTML tags, like <div>, <p>, <a>. They are the most common types of nodes.
+(ii) Attribute node: Represent attributes of HTML tags, like class, id, href.
+(iii) Text node: Represent the text content inside HTML elements
+(iv) Comment node: Represent comments in the HTML code (<!-- comment -->)
+
+6. Manipulating objects: DOM objects can be manipulated using various methods and properties - 
+
+for example: 
+(i)element.innerHTML: Gets or sets the HTML content inside an element.
+(ii)element.style: Accesses or modifies the CSS styles of an element.
+(iii)element.setAttribute(): Sets a new attribute or changes the value of an existing attribute on an element.
+(iv)element.appendChild(): Adds a new child node to an element.
+
+7. Document: The document is a special object that serves as the entry point into the DOM of the web page. It represents the whole HTML document loaded in the browser window. The document object is a property of the window object and acts as the root node of the DOM tree.
+
+properties:
+(i)document.title: Gets or sets the title of the document.
+(ii)document.body: Returns the <body> element of the document.
+(iii)document.getElementById(): Returns the element with the specified ID.
+(iv)document.querySelector(): Returns the first element that matches a specified CSS selector.
+(v)document.createElement(): Creates a new element node.
+
+8. Window object: The Window object represents the browser window that contains the DOM document. It serves as the global object in client-side JavaScript and provides access to various browser-related functionalities and properties.
+
+9. Browser Object Model (BOM) provides JavaScript interfaces for interacting with the browser window and its components, such as the location, history, and navigator. It's not standardized like the DOM and varies across different browsers.
+
+10. The World Wide Web Consortium (W3C) has classified the DOM into three sub-types:
+(i) Core DOM (standard model for all document types)
+(ii) XML DOM (standard model for XML types)
+(iii) HTML DOM (standard model for HTML types)
