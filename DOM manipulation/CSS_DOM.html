@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <div id="div1" style="background-color: bisque;">
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur!</p>
+    </div>
+    <div id="div2" style="background-color: burlywood;">
+        <p id="p2" title="sample paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur!</p>
+    </div>
+
+
+    <script>
+        // first method
+        let element = document.getElementById("p1"); 
+        element.style.fontSize = "50px"; // style - modifies a single property only
+
+
+        // second 
+        let element1 = document.getElementById("div2");
+        element1.style.cssText = "background-color: green; color: yellow; padding: 1.5rem;"; // cssText allows to set multiple properties together
+        
+        // third
+        // used to add a new attribute or update an existing attribute on an HTML element
+        // element.setAttribute(attributeName, attributeValue);
+        // attributeName: The name of the attribute we want to add or update it can be class, id, style, etc.
+        // value: The value to assign to the attribute.
+        element.setAttribute("id", "para1"); // id = para1 gets added to element (overwriting the existing attribute) - BE CAUTIOUS WHILE USING IT
+        element.setAttribute("style", "background-color: red;")
+        // It is possible to add a style attribute with a value to an element, but it is not recommended because it can overwrite other properties in the style attribute.
+
+        // element.setAttribute("href", "https://www.flipkart.in/");
+
+
+        // getAttribute(attributeName) - used to retrieve the value of a specified attribute on an HTML element
+        var titleAttributeValue = element.getAttribute("title");
+        console.log(titleAttributeValue);
+        // output: sample paragraph
+    </script>
+</body>
+</html>

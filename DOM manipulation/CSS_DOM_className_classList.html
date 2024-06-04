@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" style="background-color: bisque;">
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequuntur!</p>
+    </div>
+
+</body>
+</html>
+
+
+<!-- 
+    className:
+    The className property in JavaScript is a string representing the class attribute of an element.
+    The className property is a straightforward way to access or modify the classes of an HTML element.
+    It returns a string containing all the classes assigned to the element.
+
+ -->
+<!-- 
+    classList:
+    provides an interface to manipulate the classes of that element easily
+    It's a read-only property that returns a live DOMTokenList collection of the class attributes of the element
+    DOMTokenList behaves like an array of strings, where each string represents a single class of the element
+ -->
+
+<script>
+
+    let element = document.getElementById("div1");
+    element.className += 'class1 class2' // multiple classes can be added if there is no class assigned
+    element.classList = element.className.replace("class1", "class3"); // class1 replaced with class3
+
+
+    let element1 = getElementById("p1")
+    element1.classList.add('class4', 'class5', 'class6'); // multiple classes can be added
+    element1.classList.remove('class4', 'class5'); // multiple classes can be removed
+    element1.classList.contains('class4'); // returns true or false if class4 is present or not
+    element1.classList.toggle('class6'); // If the class exists, it's removed; otherwise, it's added
+
+
+
+</script>

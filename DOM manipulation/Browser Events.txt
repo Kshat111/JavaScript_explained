@@ -1,0 +1,3 @@
+1. An event is a signal that something has happened. It could be a user clicking a button, hovering over an element, pressing a key, or even a system event like the completion of an asynchronous task.
+2. In JavaScript, events are represented as objects that contain information about the event and its context.
+3. monitorEvents(document); will keep track of every event occuring on the browser
