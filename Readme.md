@@ -1,0 +1,9 @@
+JavaScript is a single threaded, non blocking, asynchronous concurrent, and object-oriented computer programming language commonly used to create interactive effects within web browsers.
+It has a call stack, an event loop, a callback queue (task queue), and some other APIs.
+Single threaded - It can only execute one task at a time (JS runtime can only do one task at a time, but it is more than a runtime. Browser gives us other things like web APIs working along with runtime)
+Non blocking - asynchronous functions (e.g the setTimeout function) will not block the execution of other functions in the call stack (asynchronous callbacks handle this non blocking behaviour)
+Asynchronous concurrent- operations can be performed without blocking the main execution thread.
+Call stack - Just like a normal stack (LIFO) that tracks the functions in a program
+Callback queue -  As we know that JS is a single threaded language, therefore the remaining task are queued to the task queue waiting to be executed. For example, on running setTimeout, web APIs will run a timer (which is delay set by the programmer) and push it to the task queue, then it is pushed to the call stack where it can be executed once the tmier ends. 
+Event loop - This loop pushes the pending tasks from the queue to the stack. setTimeout(<function>, 0) can be used to delay a function until all the pending tasks have been executed.
+Visit this link for understanding it visually: http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D

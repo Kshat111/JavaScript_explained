@@ -1,0 +1,50 @@
+1. Asynchronous JavaScript refers to programming techniques in JavaScript that allow operations to be performed without blocking the main execution thread.
+2. This enables the handling of multiple tasks concurrently, which can improve the performance and responsiveness of web applications.
+3. Functions running in parallel with other functions are asynchronous function.
+4. Asynchronous tasks heavily depend on resources
+
+
+REFLOW AND REPAINT:
+
+4. Both of them are the concepts involved in rendering process of web browsers.
+5. Reflow (or layout) occurs when the browser calculates the positions and dimensions of elements on the page. This can be triggered by:
+
+(1)Adding, removing, or modifying DOM elements.
+(2)Changing styles that affect the layout, such as width, height, margin, padding, and font size.
+(3)Resizing the browser window.
+(4)Changing the content of form inputs.
+
+6. Reflow is an intensive operation because the browser may need to recalculate the layout for a large portion of the page or even the entire document. This process can affect performance, especially in complex layouts or when many elements are involved.
+7. Repaint (or redraw) happens after reflow. It involves updating the actual pixels on the screen to reflect the new layout and style changes.
+8. Repaint is generally less expensive than reflow because it only involves updating the visual appearance rather than recalculating the layout.
+
+9. We must try to minimise the number of reflows and repaints to increase the performance of the web app (following methods can be used to do the same)
+
+(1) Instead of making multiple individual DOM modifications, batch them together whenever possible to minimize the number of reflows triggered.
+(2) Reduce the complexity of CSS selectors and avoid inefficient CSS rules that trigger reflows unnecessarily. Minimize the use of CSS properties that trigger reflows, such as width, height, top, left, and position.
+(3) Be mindful of JavaScript code that frequently queries the DOM or calculates element dimensions, as these can trigger reflows.
+(4) Libraries like React or Vue.js maintain a virtual representation of the DOM and efficiently update the real DOM only when necessary.
+
+
+DOCUMENT FRAGMENT
+
+10. A document fragment is a lightweight container that acts as a temporary holding area for DOM elements. It exists outside the main DOM tree.
+11. Benefits:
+(1) You append the entire fragment at once, triggering a single reflow (thus improving the performance)
+(2) beneficial for memory-intensive operations involving large DOM structures.
+(3) Fragments can help organize complex DOM manipulation logic, making your code more maintainable and easier to reason about.
+
+
+11. Asynchronous JS has the following key concepts:
+(1) Callbacks
+(2) Promises
+(3) Async/Await
+
+
+
+12. Asynchronous JavaScript is essential for tasks such as:
+
+(1) Fetching data from a server (AJAX requests).
+(2) Reading or writing to files.
+(3) Timer-based events.
+(4) Handling user interactions without freezing the UI.
