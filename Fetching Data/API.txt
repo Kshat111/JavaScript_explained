@@ -1,0 +1,8 @@
+1. An analogy:
+Imagine we're at a restaurant. We (the user) tell the waiter (the API) what we want to order (the request).
+The waiter relays our order to the kitchen (the other application) and brings back our food (the response).
+In this analogy, the menu (the API documentation) outlines the available dishes (functions) and how to order them (proper request format).
+
+2. API (Application Programming Interface) serves as an intermediary that facilitates the exchange of data and functionality between different software components, enabling seamless integration and interoperability.
+3. A REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. REST is an architectural style that uses standard HTTP methods and is designed to be stateless, scalable, and simple.
+4. API keys are used by API providers to control access to the API, track usage, and identify the calling program or user.

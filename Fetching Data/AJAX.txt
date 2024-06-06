@@ -1,0 +1,12 @@
+1. AJAX (Asynchronous JavaScript and XML): A set of web development techniques that enable web pages to fetch data asynchronously from a server without reloading the entire page.
+2. It leverages a combination of JavaScript, XMLHttpRequest (XHR) objects, and server-side technologies (e.g., JSON, XML, HTML, plain text) to exchange data with the server and update parts of the page dynamically.
+
+(i) Asynchronous coomunication: AJAX allows data exchange between the browser and server in the background, without hindering UX
+(ii) JavaScript: acts as a binding medium as it sends requests to the server, processes the received data and updates the web page dynamically (DOM manipulation)
+(iii) XMLHttpRequest(XHR): This built-in browser object handles the communication between JavaScript and the server. It retrives data in formats like JSON, XML, etc.
+
+3. Importance of AJAX:
+
+(i) Enhanced responsiveness - Elimination of full page reloads
+(ii) Improved UX - features like live search suggestions, auto-complete functionality, real-time chat applications, and dynamic content updates
+(iii) Reduced server load - Only the necessary data is exchanged between the browser and server, minimizing unnecessary server requests and improving overall application performance.

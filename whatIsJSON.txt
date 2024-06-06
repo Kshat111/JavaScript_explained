@@ -1,0 +1,22 @@
+1. PARSING: Parsing is a fundamental process in computing that involves analyzing and converting input data into a structured format that can be easily processed by a program. It plays a crucial role in data interchange, error detection, and the execution of code.
+2. JSON (JavaScript Object Notation) is a lightweight data interchange format which is easy for humans to read and write and for machines to parse.
+3. Uses objects and arrays as its syntax
+4. Commonly used for data exchange between client and server, configuration files, and APIs.
+5. JSON.parse() for parsing JSON strings into objects, and JSON.stringify() for converting objects to JSON strings.
+
+for example,
+a JSON object looks like this:
+
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown"
+  },
+  "phoneNumbers": [
+    "123-456-7890",
+    "987-654-3210"
+  ]
+}

@@ -1,0 +1,35 @@
+1. Markup language: A system for annotating a document in a way that is syntactically distinguishable from the text. It uses tags or other markers to definee elements within the document.
+2. HTML (HyperText Markup Language): The standard markup language used to create web pages
+3. XML (eXtensible Markup Language): A markup language designed to store and transport data. It has user defined tags. For example,
+
+<bookstore>
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J.K. Rowling</author>
+    <year>1997</year>
+    <price>29.99</price>
+  </book>
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+</bookstore>
+
+
+4. Markdown: A lightweight markup language with a plain text formatting syntax. For example,
+
+
+# This is a Heading
+
+This is a paragraph with **bold** text and *italic* text.
+
+## Subheading
+
+Here is a list:
+- Item 1
+- Item 2
+- Item 3
+
+And a link to [Google](https://www.google.com).
