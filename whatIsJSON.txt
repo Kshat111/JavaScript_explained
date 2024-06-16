@@ -20,3 +20,9 @@ a JSON object looks like this:
     "987-654-3210"
   ]
 }
+
+6. BEFORE PARSING VS AFTER PARSING:
+
+Before Parsing: The request body is a raw JSON string.
+After Parsing: The request body is a parsed JavaScript object available on req.body.
+
